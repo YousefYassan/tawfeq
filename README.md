@@ -1,3 +1,7 @@
+![1694401816348](https://github.com/user-attachments/assets/d76195f4-cb36-4e17-be6c-c63d01870e22)
+
+
+
 # Data Engineering Project: Tawfeq
 Project Overview:
 The Tawfeq Data Engineering Project aims to build a scalable data pipeline that ingests, processes, and stores data from multiple sources into a structured format suitable for analysis and reporting. The project leverages Azure Data Lake, Azure SQL Data Warehouse, and Apache Spark for efficient data processing, transformation, and loading. Additionally, the project creates Parquet files to facilitate fast querying and efficient storage.
