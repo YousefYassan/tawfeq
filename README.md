@@ -1,5 +1,10 @@
 ![1694401816348](https://github.com/user-attachments/assets/d76195f4-cb36-4e17-be6c-c63d01870e22)
 
+![image](https://github.com/user-attachments/assets/474ee1ad-0166-4b77-8453-dcee721e20ee)
+
+![image](https://github.com/user-attachments/assets/a24ebfea-a751-4af8-8253-333de4fc17bf)
+
+
 
 
 # Data Engineering Project: Tawfeq
