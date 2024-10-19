@@ -58,6 +58,31 @@ Enrichment: Adding calculated fields such as rates, averages, and growth metrics
 Azure SQL Data Warehouse: For querying and reporting.
 Parquet Files: For storing optimized, structured data in the data lake.
 
+
+# Why Use Proxies and IP Rotation?
+When scraping data from websites, especially at scale, it's common to encounter anti-scraping mechanisms, such as:
+
+IP Blocking: Sites can block or throttle requests from the same IP address.
+Rate Limits: Some websites limit the number of requests from a single IP address over a specific time.
+
+# By using IP rotation and proxy services, we ensure:
+
+Anonymity: Requests appear to come from different IP addresses, avoiding detection.
+Continuous Operation: If one IP gets blocked, another can be used without disrupting the scraping process.
+Proxy Service and IP Rotation
+We implemented IP rotation using a proxy provider that offers dynamic IPs from a global pool. The proxy service automatically assigns a different IP for each request, ensuring the scraper remains undetected.
+
+# Steps for Implementation
+Set Up Proxy: We configured our scraper to route requests through a proxy server.
+Integrate IP Rotation: IP addresses were automatically rotated for each HTTP request to bypass rate limits and avoid detection.
+Handle Errors and Retrying: Built-in mechanisms for retries and error handling in case of failed requests or blocked IPs.
+# Technologies Used
+Bypass Proxy: A proxy provider that supports IP rotation for large-scale scraping.
+Python (requests/BeautifulSoup/Selenium): For making HTTP requests and parsing HTML content.
+
+
+
+
 # Key Tables
 Product_Dimension: Contains product metadata such as brand, model, and specifications.
 Resolution_Dimension: Captures screen resolution details like width, height, and resolution.
