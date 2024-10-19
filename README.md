@@ -16,6 +16,7 @@ Automate the entire process using Azure Data Factory.
 /notebooks: Jupyter notebooks for exploratory data analysis.
 /config: Configuration files for data pipeline settings.
 
+
 # Technology Stack
 Azure Data Lake: For storing large volumes of raw data.
 Azure SQL Data Warehouse: For structured storage of processed data.
@@ -26,6 +27,9 @@ Pandas: For handling dataframes and performing data cleaning.
 Parquet: For efficient data storage.
 SQL Data Warehouse: Used for storing transformed data in structured formats.
 ETL Medallion Architecture: A three-tier approach for data transformation and enrichment.
+
+# Azure Functions: Data Scraping and Bronze Cleaning
+Azure Functions are leveraged to automate the data scraping process. These serverless functions fetch data from various sources and immediately clean the data during ingestion to the Bronze Layer. The cleaning process includes removing duplicates, handling missing values, and ensuring format consistency before storing the data in the raw data layer.
 
 # ETL Pipeline
 The ETL pipeline follows the Medallion Architecture, which consists of three key layers:
