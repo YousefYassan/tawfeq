@@ -1,7 +1,7 @@
 ![Screenshot 2024-10-19 215657](https://github.com/user-attachments/assets/f06e3e69-e3ea-40da-bdc0-514438ed03ab)
 
 
-Pipeline Steps:
+# Pipeline Steps:
 Data Ingestion (Bronze Layer):
 
 Source: Data is scraped from various websites using Azure Functions with an IP rotation strategy via proxies (e.g., Bright Data Proxy) to prevent blocking and ensure reliable scraping.
