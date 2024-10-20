@@ -41,7 +41,7 @@ CREATE EXTERNAL TABLE dbo.VISP (
 	)
 	WITH (
 	LOCATION = 'PDataConcatData.parquet',
-	DATA_SOURCE = [files_datalake73btp14_dfs_core_windows_net],
+	DATA_SOURCE = [######################],
 	FILE_FORMAT = [SynapseParquetFormat]
 	)
 GO
