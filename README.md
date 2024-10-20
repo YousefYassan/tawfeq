@@ -93,6 +93,25 @@ Bypass Proxy: A proxy provider that supports IP rotation for large-scale scrapin
 Python (requests/BeautifulSoup/Selenium): For making HTTP requests and parsing HTML content.
 
 
+# Data Flow
+Data Source (Azure Data Lake Storage Gen2 - Bronze Layer):
+
+Raw data is stored in the Bronze Layer of the Data Lake. This raw data may come from different sources, such as scraping or transactional systems, and requires further processing and cleaning.
+Bronze Layer: Contains raw, unstructured, or semi-structured data in Parquet, JSON, or CSV formats.
+Copy Data Activity:
+
+The Copy Data activity in Azure Data Factory extracts data from the Data Lake's Bronze Layer and copies it into the Silver Layer. During this process, data undergoes basic cleaning and transformation (e.g., type casting, format changes) to prepare it for downstream use.
+This operation is highly scalable and can handle large volumes of data in parallel.
+Data Transformation (Silver Layer):
+
+Data in the Silver Layer is now structured and ready for deeper transformation. Here, more advanced cleaning and transformation are performed, including aggregations, deduplication, and joining with other datasets.
+This layer serves as a staging area for refined and ready-to-analyze data.
+Load to Data Warehouse (Gold Layer):
+
+The processed data is loaded from the Silver Layer into the Data Warehouse (Gold Layer) for analysis and reporting.
+Azure Synapse Analytics or another SQL-based data warehouse is used to store the clean, structured data for end-user access.
+In this phase, the Copy Data activity writes data into the Gold Layer in a structured format (e.g., fact and dimension tables), ready for reporting and analysis.
+
 
 
 # Key Tables
