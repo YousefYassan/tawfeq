@@ -1,10 +1,10 @@
 import pandas as pd
 
-dfeg=pd.read_csv("abfss://files@datalake73btp14.dfs.core.windows.net/PData.csv")
+dfeg=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData.csv")
 
 
-dfsa=pd.read_csv("abfss://files@datalake73btp14.dfs.core.windows.net/PData_SA.csv")
-dfnl=pd.read_csv("abfss://files@datalake73btp14.dfs.core.windows.net/PData_NL.csv")
+dfsa=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData_SA.csv")
+dfnl=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData_NL.csv")
 
 
 dfeg['Region']='Egypt'
@@ -212,8 +212,8 @@ tecsp=df[['wireless technology','wireless provider',
 
        
 webs
-fact.to_parquet('abfss://files@datalake73btp14.dfs.core.windows.net/Fact_Table.parquet', index=False)
-product.to_parquet('abfss://files@datalake73btp14.dfs.core.windows.net/Product_Dimsion.parquet', index=False)
-reso.to_parquet('abfss://files@datalake73btp14.dfs.core.windows.net/Resolution_Dimsion.parquet', index=False)
-webs.to_parquet('abfss://files@datalake73btp14.dfs.core.windows.net/Website_Dimsion.parquet', index=False)
-tecsp.to_parquet('abfss://files@datalake73btp14.dfs.core.windows.net/Tech_special_Dimion.parquet', index=False)
+fact.to_parquet('abfss://######@######.dfs.core.windows.net/Fact_Table.parquet', index=False)
+product.to_parquet('abfss://######@######.dfs.core.windows.net/Product_Dimsion.parquet', index=False)
+reso.to_parquet('abfss://######@######.dfs.core.windows.net/Resolution_Dimsion.parquet', index=False)
+webs.to_parquet('abfss://######@######.dfs.core.windows.net/Website_Dimsion.parquet', index=False)
+tecsp.to_parquet('abfss://######@######.dfs.core.windows.net/Tech_special_Dimion.parquet', index=False)
