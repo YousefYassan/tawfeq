@@ -7,9 +7,9 @@
 ![Screenshot 2024-10-19 215657](https://github.com/user-attachments/assets/d2bb0a2d-bbd5-4446-b313-8d6821b8f86b)
 
 ![second_pipline](https://github.com/user-attachments/assets/0d71a83e-3c29-42d4-bcc8-dbbab5ee0c75)
-![Uploading 1680795030727.png…]()
 
 
+![1680795030727](https://github.com/user-attachments/assets/56e0a7dd-a08d-4cf8-b10f-335c19a0a5e0)
 
 
 
