@@ -9,6 +9,7 @@
 ![second_pipline](https://github.com/user-attachments/assets/0d71a83e-3c29-42d4-bcc8-dbbab5ee0c75)
 
 
+![Screenshot 2024-10-20 192431](https://github.com/user-attachments/assets/9ca62930-4055-48bb-bae8-812e81380aa7)
 
 
 # Data Engineering Project: Tawfeq
