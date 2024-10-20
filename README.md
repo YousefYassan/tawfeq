@@ -128,6 +128,27 @@ Data Transformation: Cleanses and transforms data into usable formats while main
 Data Storage: Efficiently stores data in a structured format, ready for querying and analysis.
 Error Handling: Captures errors during the data load process for easy debugging and reprocessing.
 
+# Model Training and Development
+# Data Preparation
+The model is trained on a dataset that includes various device features and their corresponding prices.
+Data preprocessing involves handling missing values, encoding categorical variables, and scaling numerical features to improve model performance.
+# Model Selection
+Multiple regression algorithms were evaluated, including:
+Linear Regression: The primary algorithm used for predictions.
+K-Nearest Neighbors (KNN): An alternative model for comparison.
+Random Forest: Used for its robustness and ability to handle non-linear relationships.
+Support Vector Regression (SVR): Evaluated for potential performance improvements.
+# Performance Metrics
+The model's performance is evaluated using the Root Mean Squared Error (RMSE), which provides insights into the model's accuracy on training and testing datasets.
+
+# Contributing
+Contributions to the project are welcome! If you'd like to contribute, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add a new feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
 
 # Error Handling
 Common errors handled in this project include:
