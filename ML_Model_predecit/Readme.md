@@ -1,6 +1,7 @@
 
 
 ![Screenshot 2024-10-20 192431](https://github.com/user-attachments/assets/a7216a7f-a7a7-4812-a888-3284298f0d79)
+![1680795030727](https://github.com/user-attachments/assets/09f77f76-232e-41d7-8b6d-7375cc6dd7b5)
 
 # Model Training and Development
 
