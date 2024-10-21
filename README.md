@@ -10,6 +10,7 @@
 
 
 ![1680795030727](https://github.com/user-attachments/assets/56e0a7dd-a08d-4cf8-b10f-335c19a0a5e0)
+![Screenshot 2024-10-21 030348](https://github.com/user-attachments/assets/ee2567e2-b3cd-479b-9672-6d6eaaf6933c)
 
 
 
