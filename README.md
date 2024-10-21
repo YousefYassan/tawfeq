@@ -159,3 +159,37 @@ Common errors handled in this project include:
 Column Mapping Errors: Ensuring proper column names and mapping between source and target systems.
 Data Type Mismatch: Resolving issues related to improper data types, particularly in numerical columns.
 Missing Data: Handling missing or null values by applying appropriate transformations (e.g., imputation or default values).
+
+
+# Visualizations and Data Analysis
+In this section of the pipeline, data visualization and analysis play a key role in providing insights and aiding decision-making. By integrating Python, Azure Synapse, and Power BI, this project leverages multiple layers of data to extract meaningful insights and present them in an intuitive, accessible format.
+
+# Visualizations
+The visualizations are generated from the data after it moves through the ETL pipeline and is stored in the silver and gold layers of the Medallion architecture. These layers hold data that has been cleaned, transformed, and aggregated, making it ready for analysis.
+
+# Key visualizations include:
+
+Financial Performance Dashboards: This includes comparisons between approved budgets and actual expenditures, displayed as bar and line charts to track the financial sustainability indicator.
+Metrics Visualized: Budget vs. Expenditure, Variance Analysis
+Tools Used: Power BI, Matplotlib
+Stock Market Trends: For projects involving stock market data, line charts and candlestick charts are used to illustrate the behavior of financial instruments over time, highlighting key pivots like Small Pivot Highs (SPH) and Small Pivot Lows (SPL).
+Metrics Visualized: SPH, SPL, trading volume, moving averages
+Tools Used: Python (Matplotlib, Seaborn)
+Product Analysis: Visualizing product dimensions such as screen size, resolution, and pricing, to analyze trends in technology products across different categories.
+Metrics Visualized: Screen size distribution, Price-to-Feature ratio
+Tools Used: Power BI, Seaborn
+# Analysis
+The analysis focuses on extracting actionable insights from the structured data. The primary focus areas include:
+
+# Financial Analysis:
+
+Sustainability Indicator: The ratio of approved budget to actual expenditure is calculated to determine the sustainability of financial operations. Values greater than 100% indicate efficient resource utilization.
+Anomaly Detection: Outliers and trends are identified in the budget-expenditure data, allowing financial teams to address inconsistencies.
+# Stock Market Analysis:
+
+Pivot Detection: The identification of Small Pivot Highs (SPH) and Small Pivot Lows (SPL) allows for a deeper understanding of market trends and turning points. These pivots provide insight into potential trading strategies.
+Correlation Analysis: Key financial metrics, such as price movement and volume, are analyzed for correlations that may signal future market behaviors.
+Product Performance Analysis:
+
+Feature and Price Distribution: The analysis highlights how different features (e.g., screen size, resolution) influence pricing, providing insights for competitive pricing strategies.
+Customer Reviews Analysis: By analyzing customer review data, the project can uncover trends related to customer satisfaction across various product categories.
