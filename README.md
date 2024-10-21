@@ -46,6 +46,27 @@ ETL Medallion Architecture: A three-tier approach for data transformation and en
 
 # Azure Functions: Data Scraping and Bronze Cleaning
 Azure Functions are leveraged to automate the data scraping process. These serverless functions fetch data from various sources and immediately clean the data during ingestion to the Bronze Layer. The cleaning process includes removing duplicates, handling missing values, and ensuring format consistency before storing the data in the raw data layer.
+1. Serverless Architecture:
+Azure Functions operate in a serverless environment, meaning you don't need to manage any infrastructure. You can focus on writing the scraping and cleaning logic, and Azure handles the scaling, provisioning, and server management.
+Notebooks, while useful for exploratory tasks, typically require a running compute environment, which can be resource-intensive for ongoing or scheduled tasks.
+2. Event-Driven Execution:
+Azure Functions can be triggered by various events (e.g., HTTP requests, timers, or data changes in Azure services like Blob storage or Data Lake). This makes them highly suitable for automating tasks such as scraping at scheduled intervals or cleaning data when new files arrive in the data lake.
+Notebooks, on the other hand, are more manual and are typically run interactively, which means they need a user to trigger their execution unless they are deployed using scheduled tasks.
+3. Scalability:
+Azure Functions scale automatically based on demand, which is ideal for handling fluctuating workloads. For example, if you're scraping websites and the data volume increases, Azure Functions can scale to accommodate more requests.
+Notebooks are not inherently scalable. If you need to scale a notebook to handle larger workloads, you'll have to manage that manually by upgrading the underlying compute resources.
+4. Cost Efficiency:
+With Azure Functions, you only pay for the resources when the function is running. This pay-per-execution model makes it highly cost-effective for short-running tasks like scraping or bronze data cleaning.
+Notebooks often require a dedicated compute resource that runs for a set period (even when not in use), leading to higher costs, especially for lightweight or event-driven tasks.
+5. Automation and Integration:
+Azure Functions can easily be integrated into a larger pipeline using services like Azure Logic Apps or Data Factory, which makes automation easier. You can configure triggers for scraping and cleaning without manual intervention.
+While Notebooks can be automated through schedulers, they are better suited for interactive data exploration rather than fully automated production pipelines.
+6. Robust Error Handling and Logging:
+Azure Functions come with built-in error handling, logging, and monitoring features. You can use Application Insights for real-time logging and debugging. This is beneficial for maintaining the stability of scraping operations and catching issues quickly.
+Notebooks can have error handling, but it’s less robust and more difficult to monitor, especially when used in production environments.
+7. Deployment Flexibility:
+Azure Functions can be deployed and updated easily, and you can manage different versions of the function code in production environments. This is useful for maintaining a clean codebase and ensuring consistent deployment of the scraping and cleaning tasks.
+Notebooks require manual execution or scheduling, and managing versions can be trickier, especially when collaborating across teams.
 
 # ETL Pipeline
 The ETL pipeline follows the Medallion Architecture, which consists of three key layers:
