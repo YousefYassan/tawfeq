@@ -1,3 +1,6 @@
+![SCHEMA_MODELING](https://github.com/user-attachments/assets/4a29875c-6523-4d34-8fb3-d8b4e6e1a22e)
+
+
 #  Data Warehouse on Dedicated SQL Pool - Specific Description
 In this project, the Data Warehouse is implemented using a Dedicated SQL Pool within Azure Synapse Analytics. A Dedicated SQL Pool is a highly scalable, fully managed data warehousing solution that enables fast and complex analytical queries on large datasets. The data warehouse serves as the central repository for storing, querying, and analyzing business data processed through the ETL pipeline.
 
