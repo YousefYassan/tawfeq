@@ -1,7 +1,7 @@
 ![SCHEMA_MODELING](https://github.com/user-attachments/assets/4a29875c-6523-4d34-8fb3-d8b4e6e1a22e)
 
 
-## Slowly Changing Dimension (SCD) Type 2
+# Slowly Changing Dimension (SCD) Type 2
 Introduction
 This project demonstrates the implementation of Slowly Changing Dimension (SCD) Type 2 in a data warehouse environment. SCD Type 2 is used to track historical changes in dimension records over time, allowing you to maintain both current and historical data in a single table.
 
