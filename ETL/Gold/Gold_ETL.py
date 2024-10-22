@@ -1,9 +1,9 @@
 import pandas as pd
-productdim = pd.read_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Product_Dimsion.parquet")
-resdimm = pd.read_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Resolution_Dimsion.parquet")
-techdim = pd.read_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Tech_special_Dimion.parquet")
-webdim = pd.read_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Website_Dimsion.parquet")
-fact = pd.read_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Fact_Table.parquet")
+productdim = pd.read_parquet("abfss://######@######dfs.core.windows.net/Product_Dimsion.parquet")
+resdimm = pd.read_parquet("abfss://######@######dfs.core.windows.net/Resolution_Dimsion.parquet")
+techdim = pd.read_parquet("abfss://######@######dfs.core.windows.net/Tech_special_Dimion.parquet")
+webdim = pd.read_parquet("abfss://######@######dfs.core.windows.net/Website_Dimsion.parquet")
+fact = pd.read_parquet("abfss://######@######dfs.core.windows.net/Fact_Table.parquet")
 productdim[["ram","storage"]] = productdim[["ram","storage"]].fillna(0.0)
 fact[["price","price_before_promotion","rate"]] =fact[["price","price_before_promotion","rate"]].fillna(0.0)
 resdimm[["width_resolution","height_resolution","screen_size","resolution"]]=resdimm[["width_resolution","height_resolution","screen_size","resolution"]].fillna(0.0)
@@ -36,13 +36,13 @@ resdimm
 # productdim.columns
 
 
-productdim.to_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Product_Dimsion.parquet",index=False)
-#resdimm.to_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Resolution_Dimsion.parquet",index=False)
-techdim.to_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Tech_special_Dimion.parquet",index=False)
-webdim.to_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Website_Dimsion.parquet",index=False)
-fact.to_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Fact_Table.parquet",index=False)
+productdim.to_parquet("abfss://######@######dfs.core.windows.net/Product_Dimsion.parquet",index=False)
+#resdimm.to_parquet("abfss://######@######dfs.core.windows.net/Resolution_Dimsion.parquet",index=False)
+techdim.to_parquet("abfss://######@######dfs.core.windows.net/Tech_special_Dimion.parquet",index=False)
+webdim.to_parquet("abfss://######@######dfs.core.windows.net/Website_Dimsion.parquet",index=False)
+fact.to_parquet("abfss://######@######dfs.core.windows.net/Fact_Table.parquet",index=False)
 # Convert any specific columns that may be problematic
 #resdimm['resolution'] = resdimm['resolution'].astype(str)  # if necessary
 
 #engine='pyarrow'
-resdimm.to_parquet("abfss://files@datalake73btp14.dfs.core.windows.net/Resolution_Dimsion.parquet",index=False)
+resdimm.to_parquet("abfss://######@######dfs.core.windows.net/Resolution_Dimsion.parquet",index=False)
