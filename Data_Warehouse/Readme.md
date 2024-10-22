@@ -1,6 +1,20 @@
 ![SCHEMA_MODELING](https://github.com/user-attachments/assets/4a29875c-6523-4d34-8fb3-d8b4e6e1a22e)
 
 
+## Slowly Changing Dimension (SCD) Type 2
+Introduction
+This project demonstrates the implementation of Slowly Changing Dimension (SCD) Type 2 in a data warehouse environment. SCD Type 2 is used to track historical changes in dimension records over time, allowing you to maintain both current and historical data in a single table.
+
+# What is SCD Type 2?
+SCD Type 2 preserves the history of changes in dimensional data by creating a new version of a record each time the source data changes. This method allows for the tracking of historical data and ensures that previous versions of dimension records are not overwritten.
+
+# Key Features
+Historical Tracking: Multiple versions of a dimension record are stored, allowing queries to reflect the correct data at any point in time.
+Surrogate Keys: Each version of a dimension record is assigned a unique surrogate key.
+Validity Dates: Each record has Start Date and End Date columns that represent the validity period of that version.
+Current Record Flag: A flag (Current Flag) is used to indicate the most recent version of a record.
+
+
 #  Data Warehouse on Dedicated SQL Pool - Specific Description
 In this project, the Data Warehouse is implemented using a Dedicated SQL Pool within Azure Synapse Analytics. A Dedicated SQL Pool is a highly scalable, fully managed data warehousing solution that enables fast and complex analytical queries on large datasets. The data warehouse serves as the central repository for storing, querying, and analyzing business data processed through the ETL pipeline.
 
